@@ -8,7 +8,7 @@ describe("EventEmitter", () => {
     });
 
     it("has public methods", () => {
-      const eventEmitter = new EventEmitter();
+      const eventEmitter: any = new EventEmitter();
 
       expect(typeof eventEmitter.on).toBe("function");
       expect(typeof eventEmitter.off).toBe("function");
